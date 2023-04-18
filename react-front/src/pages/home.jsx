@@ -38,7 +38,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      {/* <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
+      <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map(({ color, title, icon, description }) => (
@@ -53,7 +53,7 @@ export function Home() {
               />
             ))}
           </div>
-          <div className="mt-32 flex flex-wrap items-center">
+          {/* <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
                 <UsersIcon className="h-6 w-6 text-blue-gray-900" />
@@ -102,10 +102,10 @@ export function Home() {
                 </CardBody>
               </Card>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      {/* <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle heading="Here are our heroes">
             According to the National Oceanic and Atmospheric Administration,

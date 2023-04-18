@@ -44,10 +44,11 @@ const FAQ = () => {
   return (
     <>
     <section className="relative block h-[50vh]">
-        <div className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-1.jpg')] bg-cover bg-center" />
+        <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+        <div className="absolute top-0 h-full w-full bg-[url(''/img/background-1.jpg'')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
-          <div className="flex items-center justify-center">
+          <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               <Typography
                 variant="h1"
@@ -56,10 +57,13 @@ const FAQ = () => {
               >
                 FAQ
               </Typography>
-
+              <Typography variant="lead" color="white" className="opacity-80">
+              
+              </Typography>
             </div>
           </div>
         </div>
+      </div>
       </section>
 
     <div className="bg-gray-100 min-h-screen py-10">
