@@ -5,6 +5,7 @@ import {
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
   DocumentTextIcon,
+  TagIcon
 } from "@heroicons/react/24/solid";
 import FAQ from "./pages/faq";
 
@@ -16,7 +17,7 @@ export const routes = [
     element: <Home />,
   },
   {
-    icon: UserCircleIcon,
+    icon: TagIcon,
     name: "faq",
     path: "/faq",
     element: <FAQ />,

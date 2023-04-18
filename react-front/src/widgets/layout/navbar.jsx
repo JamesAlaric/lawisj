@@ -9,6 +9,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Home, Profile, SignIn, SignUp } from "@/pages";
 
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
@@ -71,7 +72,7 @@ export function Navbar({ brandName, routes, action }) {
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
           <a
-            href="https://www.material-tailwind.com/blocks?ref=mtkr"
+            href="/"
             target="_blank"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
@@ -123,14 +124,11 @@ export function Navbar({ brandName, routes, action }) {
 Navbar.defaultProps = {
   brandName: "Law for ISJ",
   action: (
-    <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-      target="_blank"
-    >
+    <Link to= {SignUp} >
       <Button variant="gradient" size="sm" fullWidth>
         S'inscrire
       </Button>
-    </a>
+    </Link>
   ),
 };
 

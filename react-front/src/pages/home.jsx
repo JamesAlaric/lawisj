@@ -17,7 +17,7 @@ import { featuresData, teamData, contactData } from "@/data";
 export function Home() {
   return (
     <>
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+      <div className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
         <div className="absolute top-0 h-full w-full bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
@@ -31,8 +31,10 @@ export function Home() {
                 Maîtrisez les lois et les procedures juridiques avec Law for ISJ
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-              Law for ISJ - votre guide en ligne pour le code pénal, la procédure pénale et la constitution.
-              vous offre une plateforme complète pour approfondir vos connaissances et rester à jour sur les dernières évolutions légales.
+                Law for ISJ - votre guide en ligne pour le code pénal, la
+                procédure pénale et la constitution. vous offre une plateforme
+                complète pour approfondir vos connaissances et rester à jour sur
+                les dernières évolutions légales.
               </Typography>
             </div>
           </div>
@@ -105,7 +107,7 @@ export function Home() {
           </div> */}
         </div>
       </section>
-      {/* <section className="px-4 pt-20 pb-48">
+      {/* <section className="px-4 pb-48 pt-20">
         <div className="container mx-auto">
           <PageTitle heading="Here are our heroes">
             According to the National Oceanic and Atmospheric Administration,
@@ -133,9 +135,10 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-blue-gray-50/50 py-24 px-4">
+       */}
+      <section className="relative bg-blue-gray-50/50 px-4 py-24">
         <div className="container mx-auto">
-          <PageTitle heading="Build something">
+          {/* <PageTitle heading="Build something">
             Put the potentially record low maximum sea ice extent tihs year down
             to low ice. According to the National Oceanic and Atmospheric
             Administration, Ted, Scambos.
@@ -161,9 +164,10 @@ export function Home() {
                 </Typography>
               </Card>
             ))}
-          </div>
+          </div> */}
           <PageTitle heading="Voulez-vous nous soumettre une modification?">
-            Completez ce formulaire et nous vous enverrons une reponse dans les 24 heures.
+            Completez ce formulaire et nous vous enverrons une reponse dans les
+            24 heures.
           </PageTitle>
           <form className="mx-auto mt-12 max-w-3xl text-center">
             <div className="mb-8 flex gap-8">
@@ -176,7 +180,7 @@ export function Home() {
             </Button>
           </form>
         </div>
-      </section> */}
+      </section>
       <div className="bg-blue-gray-50/50">
         <Footer />
       </div>

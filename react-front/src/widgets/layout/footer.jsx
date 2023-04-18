@@ -139,10 +139,10 @@ Footer.defaultProps = {
         // },
         {
           name: "Contribuer",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+          path: "https://www.github.com/JamesAlaric/lawisj",
         },
         {
-          name: "Change Log",
+          name: "Changer de langue",
           path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
         },
         {

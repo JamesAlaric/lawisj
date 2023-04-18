@@ -7,7 +7,7 @@ import { Footer } from "@/widgets/layout";
 
 const questions = [
   {
-    question: 'pourquoi le code penal?',
+    question: 'pourquoi le Code Pénal?',
     answer:
       'Le Code Pénal est une loi qui établit les infractions pénales et les peines applicables en cas de violation de ces lois. Il a pour but de protéger la société en décourageant les comportements criminels et en punissant ceux qui les commettent. Le Code Pénal est donc un outil important pour maintenir l\'ordre et la sécurité dans une société donnée.'
   },
@@ -35,7 +35,7 @@ const questions = [
 
 const FAQ = () => {
 
-  const [open, setOpen] = useState(1);
+  const [open, setOpen] = useState(0);
  
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
@@ -44,26 +44,23 @@ const FAQ = () => {
   return (
     <>
     <section className="relative block h-[50vh]">
-        <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url(''/img/background-1.jpg'')] bg-cover bg-center" />
+        <div className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-1.jpg')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
+
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-6 font-black"
+                className="mt-40  font-black"
               >
-                FAQ
+               FAQ
               </Typography>
-              <Typography variant="lead" color="white" className="opacity-80">
               
-              </Typography>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
     <div className="bg-gray-100 min-h-screen py-10">
