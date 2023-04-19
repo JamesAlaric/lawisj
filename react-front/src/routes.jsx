@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/solid";
 import FAQ from "./pages/faq";
 
+
 export const routes = [
   {
     icon: HomeIcon,
@@ -22,25 +23,25 @@ export const routes = [
     path: "/faq",
     element: <FAQ />,
   },
-  // {
-  //   icon: ArrowRightOnRectangleIcon,
-  //   name: "Sign In",
-  //   path: "/sign-in",
-  //   element: <SignIn />,
-  // },
-  // {
-  //   icon: UserPlusIcon,
-  //   name: "Sign Up",
-  //   path: "/sign-up",
-  //   element: <SignUp />,
-  // },
-  // {
-  //   icon: DocumentTextIcon,
-  //   name: "Docs",
-  //   href: "https://www.material-tailwind.com/docs/react/installation",
-  //   target: "_blank",
-  //   element: "",
-  // },
+  {
+    // icon: ArrowRightOnRectangleIcon,
+    // name: "Sign In",
+    path: "/sign-in",
+    element: <SignIn />,
+  },
+  {
+ //   icon: UserPlusIcon,
+   // name: "Sign Up",
+   path: "/sign-up",
+   element: <SignUp />,
+  },
+  {
+    //   icon: UserPlusIcon,
+      // name: "Sign Up",
+      path: "/profile",
+      element: <Profile />,
+     },
+  
 ];
 
 export default routes;

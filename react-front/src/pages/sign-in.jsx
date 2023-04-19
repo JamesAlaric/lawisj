@@ -27,7 +27,7 @@ export function SignIn() {
             className="mb-4 grid h-28 place-items-center"
           >
             <Typography variant="h3" color="white">
-              Sign In
+              Connectez-vous
             </Typography>
           </CardHeader>
           <CardBody className="flex flex-col gap-4">
@@ -35,19 +35,19 @@ export function SignIn() {
             <Input
               variant="standard"
               type="password"
-              label="Password"
+              label="Mot de passe"
               size="lg"
             />
             <div className="-ml-2.5">
-              <Checkbox label="Remember Me" />
+              <Checkbox label="Se rappeler de moi" />
             </div>
           </CardBody>
           <CardFooter className="pt-0">
             <Button variant="gradient" fullWidth>
-              Sign In
+            <Link to="/profile"> Connexion</Link>
             </Button>
             <Typography variant="small" className="mt-6 flex justify-center">
-              Don't have an account?
+              vous n'avez pas de compte?
               <Link to="/sign-up">
                 <Typography
                   as="span"
@@ -55,7 +55,7 @@ export function SignIn() {
                   color="blue"
                   className="ml-1 font-bold"
                 >
-                  Sign up
+                  Inscription
                 </Typography>
               </Link>
             </Typography>

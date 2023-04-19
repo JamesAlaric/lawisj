@@ -13,8 +13,18 @@ import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import { useTranslation } from 'react-i18next';
 
 export function Home() {
+
+  const { t, i18n } = useTranslation();
+
+  // gestionnaire d'événements pour détecter le changement de langue sélectionné par l'utilisateur
+  const handleLanguageChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+
+
+  };
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
@@ -28,13 +38,10 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Maîtrisez les lois et les procedures juridiques avec Law for ISJ
+                {t('Maîtrisez les lois et les procedures juridiques avec Law for ISJ')}
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                Law for ISJ - votre guide en ligne pour le code pénal, la
-                procédure pénale et la constitution. vous offre une plateforme
-                complète pour approfondir vos connaissances et rester à jour sur
-                les dernières évolutions légales.
+              {t('Law for ISJ - votre guide en ligne pour le code pénal, la procédure pénale et la constitution. vous offre une plateforme complète pour approfondir vos connaissances et rester à jour sur les dernières évolutions légales.')}
               </Typography>
             </div>
           </div>
@@ -42,7 +49,7 @@ export function Home() {
       </div>
       <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {featuresData.map(({ color, title, icon, description }) => (
               <FeatureCard
                 key={title}
@@ -180,6 +187,14 @@ export function Home() {
             </Button>
           </form>
         </div>
+
+        <div>
+      <h1>{t('changer de langue')}</h1> {/* utilisez la fonction t pour traduire le contenu */}
+      <select onChange={handleLanguageChange}>
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+    </div>
       </section>
       <div className="bg-blue-gray-50/50">
         <Footer />

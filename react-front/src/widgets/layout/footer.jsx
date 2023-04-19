@@ -141,10 +141,7 @@ Footer.defaultProps = {
           name: "Contribuer",
           path: "https://www.github.com/JamesAlaric/lawisj",
         },
-        {
-          name: "Changer de langue",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
+        
         {
           name: "Contactez-nous",
           path: "https://institutsaintjean.org",

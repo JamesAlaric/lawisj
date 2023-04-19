@@ -124,11 +124,11 @@ export function Navbar({ brandName, routes, action }) {
 Navbar.defaultProps = {
   brandName: "Law for ISJ",
   action: (
-    <Link to= {SignUp} >
+    <a href="/sign-up">
       <Button variant="gradient" size="sm" fullWidth>
-        S'inscrire
+        Connexion
       </Button>
-    </Link>
+    </a>
   ),
 };
 
