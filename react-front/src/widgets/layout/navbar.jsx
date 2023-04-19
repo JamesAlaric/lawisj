@@ -104,7 +104,7 @@ export function Navbar({ brandName, routes, action }) {
         <div className="container mx-auto">
           {navList}
           <a
-            href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
+            href="/"
             target="_blank"
             className="mb-2 block"
           >

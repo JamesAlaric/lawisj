@@ -8,6 +8,7 @@ import {
   TagIcon
 } from "@heroicons/react/24/solid";
 import FAQ from "./pages/faq";
+import CodePenal from "./pages/codepenal";
 
 
 export const routes = [
@@ -40,7 +41,13 @@ export const routes = [
       // name: "Sign Up",
       path: "/profile",
       element: <Profile />,
-     },
+  },
+  {
+    //   icon: ,
+      // name: "code Penal",
+      path: "/codepenal",
+      element: <CodePenal />,
+  },
   
 ];
 

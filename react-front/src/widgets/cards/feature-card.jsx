@@ -5,11 +5,15 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
+import { Button } from "@material-tailwind/react";
 
-export function FeatureCard({ color, icon, title, description }) {
+export function FeatureCard({path, color, icon, title, description }) {
   return (
+    <>
     <Card className="rounded-xl shadow-lg shadow-gray-500/10">
       <CardBody className="px-6 text-center">
+      
         <IconButton
           variant="gradient"
           size="lg"
@@ -24,8 +28,12 @@ export function FeatureCard({ color, icon, title, description }) {
         <Typography className="font-normal text-blue-gray-600">
           {description}
         </Typography>
+        <div className="mt-10 flex w-full justify-center px-4 lg:order-4 lg:mt-0 lg:w-4/12 lg:justify-end lg:self-center">
+          <a href= {path} > <Button className="bg-blue-400">voir + </Button></a>
+        </div>
       </CardBody>
     </Card>
+  </>
   );
 }
 
